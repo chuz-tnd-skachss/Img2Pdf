@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+<!-- Author: https://github.com/OpenToolKit/Img2Pdf -->
+<!-- Editor: Skachkov S.S. (@chuz-tnd-skachss) -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Img2Pdf - Convert PNG/JPG/JPEG to PDF in your browser!</title>
+    <title>Img2Pdf - Конвертируй PNG/JPG/JPEG в PDF в своём браузере!</title>
     <meta name="description"
-        content="Free, In-browser, Privacy friendly image to PDF convertor. Supports JPG/JPEG,PNG Image file formats and multiple image conversion at once. Your content stays secure in your browser itself.">
+        content="Бесплатный, браузерный, ориентированный на приватность, конвертор изображений в PDF. Поддерживает JPG/JPEG,PNG форматы и слияние нескольких изображений в один файл. Ваш контент остаётся в браузере, в безопасности.">
     <link rel="shortcut icon" type="image/x-icon" href="img2pdf-favicon.ico">
     <link rel="icon" type="image/x-icon" href="img2pdf-favicon.ico">
     <link rel="stylesheet" href="css/animate.min-4.1.0.css">
@@ -136,7 +138,7 @@
                         <div class="tile is-child box animate__animated animate__zoomInDown animate__delay-1s">
                             <div class="content">
                                 <h1 class="has-text-grey-darker has-text-weight-semibold">Img2Pdf</h1>
-                                <h6 class="has-text-grey-dark">Made with ❤️ towards Privacy ⭐</h6>
+                                <h6 class="has-text-grey-dark">Сделано с ❤️ и приватностью ⭐</h6>
                             </div>
                             <div id="logo" style="text-align: center; margin-bottom: 10px;">
                                 <div class="buttons logo-block" style="margin: 0 10px;">
@@ -160,7 +162,7 @@
                         <div class="tile is-child box animate__animated animate__zoomInDown animate__delay-1s">
                             <div class="params-div">
                                 <div class="cq-range-div">
-                                    <label for="compress-quality">Image Compression: </label>
+                                    <label for="compress-quality">Компрессия изображений: </label>
                                     <input class="range-input" id="compress-quality" type="range" min="0" max="1"
                                         value="0.5" step="0.1">
                                     <output style="font-size: small;" id="output-compress-quality"
@@ -171,7 +173,7 @@
                                     style="margin-left: 20px;"> <span class="icon">
                                         <i class="fas fa-file-pdf"></i>
                                     </span>
-                                    <span>Generate PDF</span></button>
+                                    <span>Сгенерировать PDF</span></button>
                             </div>
                             <br>
                             <div class="content">
@@ -179,17 +181,17 @@
                             </div>
                             <br>
                             <div class="tags is-centered">
-                                <span class="tag is-rounded is-warning">Privacy Focused</i></span>
-                                <span class="tag is-rounded is-info">No Tracking</span>
-                                <span class="tag is-rounded is-danger">No Ads </span>
-                                <span class="tag is-rounded is-success">Fast Conversion</span>
-                                <span class="tag is-rounded is-link">Secure</span>
-                                <span class="tag is-rounded is-primary is-light">Input Reordering</span>
-                                <span class="tag is-rounded is-dark">Built-In Compression</span>
+                                <span class="tag is-rounded is-warning">Приватный</i></span>
+                                <span class="tag is-rounded is-info">Без отслеживания</span>
+                                <span class="tag is-rounded is-danger">Без рекламы</span>
+                                <span class="tag is-rounded is-success">Быстрая конвертация</span>
+                                <span class="tag is-rounded is-link">Безопасный</span>
+                                <span class="tag is-rounded is-primary is-light">Изменение порядка ввода</span>
+                                <span class="tag is-rounded is-dark">Встроенная конвертация</span>
                                 <span class="tag is-rounded is-danger is-light">Drag n Drop</span>
                             </div>
                             <div class="buttons is-centered">
-                                <a class="button" href="https://github.com/OpenToolKit/Img2Pdf">
+                                <a class="button" href="https://github.com/chuz-tnd-skachss/Img2Pdf">
                                     <span class="icon">
                                         <i class="fab fa-github"></i>
                                     </span>
@@ -244,7 +246,7 @@
 
         const inputElement = document.getElementById("input_img");
         const pond = FilePond.create(inputElement, {
-            labelIdle: `Drag & Drop your picture or <span class="filepond--label-action">Browse</span>`,
+            labelIdle: `Перенесите свои изображения или <span class="filepond--label-action">Выберите их</span>`,
             allowReorder: true,
             imageCropAspectRatio: '3:1',
             // imagePreviewMaxHeight: 200,
@@ -430,7 +432,7 @@
             doc.info = {
                 Title: 'ImageDoc.pdf',
                 Author: 'Img2Pdf',
-                Keywords: 'https://opentoolkit.github.io/Img2Pdf/'
+                Keywords: 'https://58601.ru/Img2Pdf/'
             }
             const stream = doc.pipe(blobStream());
 
